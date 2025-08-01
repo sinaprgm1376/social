@@ -4,7 +4,6 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UserModule } from './modules/user/user.module';
 import { ProfileModule } from './modules/profile/profile.module';
-import { UserModule } from './modules/user/user.module';
 import  DBconfig from "@/root/config/postgres/database.config";
 
 @Module({
