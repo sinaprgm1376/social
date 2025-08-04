@@ -19,7 +19,9 @@
     "noFallthroughCasesInSwitch": false,
     "paths": {
       "@/*": ["src/*"],
-      "@/root/*" : ["./*"]
+      "@/root/*" : ["./*"],
+      "@/types/*" : ["src/shared/types/*"],
+      "@/dto/*" : ["src/shared/dto/*"]
     }
   }
 }

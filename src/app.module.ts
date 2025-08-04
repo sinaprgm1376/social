@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { UserModule } from './modules/user/user.module';
 import { ProfileModule } from './modules/profile/profile.module';
 import { TokensModule } from './modules/tokens/tokens.module';
+import { AuthModule } from './modules/auth/auth.module';
 import  DBconfig from "@/root/config/postgres/database.config";
 
 @Module({
@@ -12,7 +13,8 @@ import  DBconfig from "@/root/config/postgres/database.config";
       TypeOrmModule.forRoot(DBconfig),
       UserModule,
       ProfileModule,
-      TokensModule
+      TokensModule,
+      AuthModule
   ],
   controllers: [AppController],
   providers: [AppService],

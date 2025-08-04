@@ -10,5 +10,5 @@ export class UserEntity extends CommonEntity{
     password: string;
 
     @Column({default: 'admin'})
-    roll: 'admin' | 'user'
+    roll?: 'admin' | 'user'
 }
